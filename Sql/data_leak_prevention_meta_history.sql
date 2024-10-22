@@ -1,0 +1,16 @@
+create table if not exists data_leak_prevention_meta_history(
+history_date varchar(255) not null,
+dlp_identifier varchar(255) null,
+identifier_meta varchar(255) null,
+prevention_rule_code varchar(255) null,
+root_cause varchar(255) null,
+root_cause_accepted char null,
+cause_analysis varchar(255) null,
+plugins varchar(255) null,
+plugin_systems varchar(255) null,
+dlp_type varchar(255) null,
+fix_done_for_future varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint data_leak_prevention_meta_history_pk primary key(history_date));

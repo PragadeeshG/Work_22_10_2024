@@ -1,0 +1,16 @@
+create table if not exists data_leak_prevention(
+dlp_identifier varchar(255) not null,
+personally_identifiable_information varchar(255) null,
+intellectual_property varchar(255) null,
+data_visibility varchar(255) null,
+secure_mobile_force varchar(255) null,
+security_enforcement_flag char null,
+bring_your_own_device varchar(255) null,
+bring_your_own_device_environment varchar(255) null,
+remote_system varchar(255) null,
+scalability varchar(255) null,
+cloud_system_security varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint data_leak_prevention_pk primary key(dlp_identifier));
